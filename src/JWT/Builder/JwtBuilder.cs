@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using JWT.Algorithms;
-using JWT.Serializers;
 
 using static JWT.Internal.EncodingHelper;
 
@@ -18,7 +17,7 @@ namespace JWT.Builder
         private IJwtDecoder _decoder;
         private IJwtValidator _validator;
 
-        private IJsonSerializer _serializer = new JsonNetSerializer();
+        private IJsonSerializer _serializer;
         private IBase64UrlEncoder _urlEncoder = new JwtBase64UrlEncoder();
         private IDateTimeProvider _dateTimeProvider = new UtcDateTimeProvider();
 

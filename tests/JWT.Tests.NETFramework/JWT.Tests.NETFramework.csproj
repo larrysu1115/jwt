@@ -109,10 +109,6 @@
       <Project>{2f79eb8d-5b33-4ea6-ac1a-89b107f043d2}</Project>
       <Name>JWT</Name>
     </ProjectReference>
-    <ProjectReference Include="..\JWT.Tests.Common\JWT.Tests.Common.csproj">
-      <Project>{5d0282d5-9cc4-4d42-a3f0-e18270f92184}</Project>
-      <Name>JWT.Tests.Common</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
