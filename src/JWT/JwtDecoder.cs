@@ -245,7 +245,7 @@ namespace JWT
             var decodedCrypto = Convert.ToBase64String(crypto);
 
             var headerJson = GetString(_urlEncoder.Decode(jwt.Header));
-            var headerData = _jsonSerializer.Deserialize<Dictionary<string, object>>(headerJson);
+            var headerData = _jsonSerializer.Deserialize<IDictionary<string, object>>(headerJson);
 
             var payload = jwt.Payload;
             var payloadJson = GetString(_urlEncoder.Decode(payload));
